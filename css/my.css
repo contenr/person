@@ -156,14 +156,23 @@ h3{
 	padding:15px;
 	box-sizing:border-box;
 	position:relative;
+	transition:all .5s;
 }
 .big{
 	height:auto;
 }
 .skill-top{
-	width:90px;
-	height:100px;
+	width:110px;
+	height:110px;
+	padding:20px;
+	box-sizing:border-box;
+	border-radius:50%;
+	border:1px solid #ccc;
 	margin:0 auto;
+}
+.skills-top{
+	height:auto;
+	overflow:hidden;
 }
 .skill-top img{
 	width:100%;
@@ -236,7 +245,7 @@ h3{
 .skills:hover .dis{
 	opacity:0.6;
 }
-@media screen and (max-width:750px){
+/*@media screen and (max-width:750px){
 	.skills{
 		display:block;
 	}
@@ -251,7 +260,7 @@ h3{
 	.skills-left{
 		display:block;
 	}
-}
+}*/
 /*work*/
 .container{
 	overflow:hidden;
@@ -260,6 +269,7 @@ h3{
 	width:30%;
 	height:300px;
 	float:left;
+	padding-top:.2rem;
 }
 @media screen and (max-width:750px){
 	.left-left{
@@ -278,15 +288,29 @@ h3{
 	float:left;
 }
 .works p{
-	font-size:26px!important;
-	padding:20px;
+	padding:10px;
 	box-sizing:border-box;
 	text-align:left;
 	line-height:30px;
 }
 .works p span{
-	font-size:20px;
 	color:#666;
+}
+@media screen and (max-width:750px){
+	.work p{
+		font-size:.3rem!important;
+	}
+	.work p span{
+		font-size:.24rem;
+	}
+}
+@media screen and (min-width:750px){
+	.work p span{
+		font-size:20px;
+	}
+	.work p{
+		font-size:26px!important;
+	}
 }
 /*My project*/
 .project{
